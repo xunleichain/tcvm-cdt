@@ -1,0 +1,24 @@
+Necessary condition:
+compile with "-Wall" no-warning
+
+C/C++ Language Disable:
+(float/double) floating point number
+
+Libc Header Disable  List:
+signal.h
+math.h
+locale.h
+errno.h
+uchar.h
+time.h(Incomplete support)
+
+Libc++ Header Disable List(Contains the above):
+rand
+atomics
+thread
+random
+
+Libc++ Feature Disable List:
+operation new/delete
+typeid/dynamic_cast(no-rtti)
+try-catch(no-exceptions)

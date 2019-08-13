@@ -1,0 +1,10 @@
+WORK_DIR=$(pwd)
+LLVM_ROOT=$WORK_DIR/bin
+WASM_TOOLS_ROOT=$WORK_DIR/bin
+TCVM_CDT_DIR=$(pwd)
+TCVM_CDT_BIN=$(pwd)/bin
+
+export LLVM_ROOT
+export WASM_TOOLS_ROOT
+export TCVM_CDT_DIR
+export TCVM_CDT_BIN
