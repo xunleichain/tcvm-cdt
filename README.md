@@ -16,7 +16,7 @@ If you don't want to install the local environment, it is recommended that you u
 ###### Install the wasm build environment
 - Support OS Debian/Ubuntu 
 - Install git, cmake > 3.4.3, make, python2.7.x to ensure that the disk free space is greater than 5GB
-- Execute  `tcvm.cdt/wasm_build.sh`
+- Execute `wasm_build.sh` in `tcvm.cdt` directory
 
 ###### Import environment variables
 - Execute `source env.sh` in `tcvm.cdt` directory and import the environment variable<br>
