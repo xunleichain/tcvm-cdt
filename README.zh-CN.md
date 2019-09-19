@@ -14,7 +14,7 @@
 
 ###### 安装wasm编译环境
 - 安装git、cmake > 3.4.3 、make、python2.7.x，保证磁盘可用空间大于5GB
-- 执行tcvm.cdt/wasm_build.sh 脚本
+- 在tcvm.cdt目录下执行，wasm_build.sh 脚本
 
 
 ###### 写入环境变量
