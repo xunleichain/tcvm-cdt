@@ -400,7 +400,7 @@ V TC_StorageGetValue(const K& key){
     tlv::BufferWriter buf;
     pack(buf, key);
 
-    V tmp;
+    V tmp{0};
     const uint8_t* str = TC_StoragePureGetBytes(buf.bytes(), buf.length());
     if (*str != '\0'){
         tlv::BufferReader reader(str);
@@ -419,7 +419,7 @@ V TC_StorageGetValue(const K& key){
  */
 template<typename V>
 V TC_StorageGetValue(const string& key){
-    V tmp;
+    V tmp{0};
     const uint8_t* str = TC_StorageGetBytes(key.c_str());
     if (*str != '\0'){
         tlv::BufferReader reader(str);
@@ -461,7 +461,7 @@ uint8_t* TC_StorageGetBytes(const tc::string& key){
  */
 template<typename V>
 V TC_StorageGetValue(char* key){
-    V tmp;
+    V tmp{0};
     const uint8_t* str = TC_StorageGetBytes(key);
     if (*str != '\0'){
         tlv::BufferReader reader(str);
@@ -480,7 +480,7 @@ V TC_StorageGetValue(char* key){
  */
 template<typename V>
 V TC_StorageGetValue(const char* key){
-    V tmp;
+    V tmp{0};
     const uint8_t* str = TC_StorageGetBytes(key);
     if (*str != '\0'){
         tlv::BufferReader reader(str);
